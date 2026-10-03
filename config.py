@@ -5,8 +5,7 @@ load_dotenv()
 
 BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
 SHOP_NAME = os.getenv("SHOP_NAME", "Lyorna").strip() or "Lyorna"
-CURRENCY = os.getenv("CURRENCY", "₽").strip() or "₽"
-DB_PATH = os.getenv("DB_PATH", "lyorna.db")
+DB_PATH = os.getenv("DB_PATH", "lyorna2.db")
 
 def parse_admins() -> set[int]:
     raw = os.getenv("ADMIN_IDS", "")
